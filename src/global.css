@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto Bold;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Josefin Sans;
+    src: url(./assets/fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin Sans Bold;
+    src: url(./assets/fonts/JosefinSans-Bold.ttf);
+}
+
+:root {
+    --corPrimaria: #FCAEAE;
+    --corSecundaria: #FFEEEE;
+    --corTerciaria: #952323;
+    --fontePrincipal: Josefin Sans;
+    --fonteSecundaria: Roboto;
+}
+
