@@ -1,0 +1,106 @@
+.formItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.item {
+    background-color: var(--corPrimaria);
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+}
+
+.itemName {
+    font-family: var(--fontePrincipal);
+    font-size: 16px;
+    display: inline;
+    color: var(--corTerciaria);
+    padding: 6px 0;
+    border-bottom: 1px solid var(--corTerciaria);
+}
+
+.itemIcon,
+.itemData {
+    height: 13px;
+    display: inline-block;
+    padding-right: 6px;
+    line-height: 18px;
+}
+
+.itemInput {
+    display: block;
+    margin-top: 30px;
+    background-color: var(--corSecundaria);
+    border: 1px solid var(--corSecundaria);
+}
+
+.itemInput:focus {
+    outline: 2px solid var(--corTerciaria);
+}
+
+.itemInput,
+.itemInput::placeholder,
+.button,
+.invalidInput {
+    text-align: center;
+    color: var(--corTerciaria);
+    font-family: var(--fontePrincipal);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button {
+    font-size: 24px;
+    border: none;
+    background-color: var(--corPrimaria);
+    cursor: pointer;
+}
+
+.items {
+    background-color: var(--corPrimaria);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: roboto;
+    font-size: 16px;
+    color: var(--corTerciaria);
+}
+
+.itemDetails {
+    padding: 16px 0 40px 0;
+}
+
+.itemNote {
+    font-size: 12px;
+}
+
+@media (max-width: 640px) {
+    .formItems {
+        display: block;
+    }
+    
+    .item {
+        margin-bottom: 10px;
+    }
+    
+    .itemInput {
+        width: 50%;
+    }
+    
+    .button {
+        margin: 0 auto;
+        display: block;
+        font-size: 18px;
+    }
+    
+    .items {
+        font-size: 14px;
+    }
+    
+    .itemNote {
+        font-size: 12px;
+    }
+
+}

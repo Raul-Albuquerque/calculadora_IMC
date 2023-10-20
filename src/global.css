@@ -1,8 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+:root {
+    --corPrimaria: #FFEEEE;
+    --corSecundaria: #FCAEAE;
+    --corTerciaria: #952323;
+    --fontePrincipal: Josefin Sans;
+    --fontePrincipalBold: Josefin Sans Bold;
+    --fonteSecundaria: Roboto;
+    --fonteSecundariaBold: Roboto Bold;
 }
 
 @font-face {
@@ -11,25 +14,82 @@
 }
 
 @font-face {
-    font-family: Roboto Bold;
-    src: url(./assets/fonts/Roboto-Bold.ttf);
-}
-
-@font-face {
     font-family: Josefin Sans;
     src: url(./assets/fonts/JosefinSans-Regular.ttf);
 }
 
-@font-face {
-    font-family: Josefin Sans Bold;
-    src: url(./assets/fonts/JosefinSans-Bold.ttf);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
 }
 
-:root {
-    --corPrimaria: #FCAEAE;
-    --corSecundaria: #FFEEEE;
-    --corTerciaria: #952323;
-    --fontePrincipal: Josefin Sans;
-    --fonteSecundaria: Roboto;
+
+body {
+    background-color: var(--corPrimaria);   
 }
 
+.container,
+.container2 {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--corSecundaria);
+}
+
+.container {
+    margin-top: 2px;
+    border-radius:  0 0 10px 10px;
+}
+
+.container2 {
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.section {
+    display: block;
+    padding: 40px;
+}
+
+.sectionTitle {
+    font-family: var(--fontePrincipal);
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--corTerciaria);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--corTerciaria);
+    display: inline-block;
+}
+
+@media (max-width: 640px) {
+    .container,
+    .container2 {
+        width: 90%;
+    }
+
+    .sectionTitle {
+        display: block;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container,
+    .container2 {
+        width: 90%;
+    }
+
+    .sectionTitle {
+        display: block;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container,
+    .container2 {
+        max-width: 90%;
+        padding: 40px;
+    }
+}
